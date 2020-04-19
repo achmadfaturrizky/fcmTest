@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import OneSignal from 'react-native-onesignal'; // Import package from node modules
-
 import Navigation from './src/Navigation';
 
 class App extends Component {
@@ -24,6 +23,7 @@ class App extends Component {
   }
 
   onReceived(notification) {
+    console.log("Data : ", this)
     console.log('Notification received: ', notification);
   }
 

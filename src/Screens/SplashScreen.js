@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {Text, View} from 'react-native';
 
 export default class Home extends Component {
   componentDidMount = () => {
@@ -7,6 +7,7 @@ export default class Home extends Component {
       this.props.navigation.navigate('Home');
     }, 5000);
   };
+
   render() {
     return (
       <View>

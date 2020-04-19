@@ -1,5 +1,6 @@
 package com.fcmtest;
 
+import android.content.Context;
 import android.content.Intent;
 
 import com.onesignal.NotificationExtenderService;
@@ -14,7 +15,7 @@ import com.onesignal.OSNotificationReceivedResult;
 public class NotificationExtender extends NotificationExtenderService {
     @Override
     protected boolean onNotificationProcessing(OSNotificationReceivedResult notification) {
-        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        Intent i = new Intent(getBaseContext(), MainActivity.class);
         startActivity(i);
         return false;
     }
