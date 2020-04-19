@@ -75,7 +75,7 @@ class Chat extends React.Component {
       headers: headers,
       body: JSON.stringify({
         app_id: '59bd33f9-7bb6-4e28-b7b0-baee3f586b16',
-        include_player_ids: ['94d00dc4-0612-4b56-923b-ea4ecf35f13e'],
+        include_player_ids: ['a1481631-5b83-4735-a95a-d25c6671544d'],
         priority: 10,
         contents: {en: 'test'},
         headings: {en: 'test Header'},
